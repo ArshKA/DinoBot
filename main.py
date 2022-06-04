@@ -4,6 +4,7 @@ import time
 import numpy as np
 from PIL import Image
 
+WAIT_BEFORE_START = 2
 
 def screen_grab(name=None):
     if name:
@@ -25,7 +26,7 @@ def save_img(name):
     im_save.save(name)
 
 
-time.sleep(2)
+time.sleep(WAIT_BEFORE_START)
 pyautogui.press('space')
 
 cactus_positions = [(0, 0), (0, 0)]
