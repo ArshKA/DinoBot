@@ -27,7 +27,6 @@ def save_img(name):
 
 time.sleep(2)
 pyautogui.press('space')
-save_img("screenshot2.png")
 
 cactus_positions = [(0, 0), (0, 0)]
 while True:
@@ -46,7 +45,6 @@ while True:
                 speed = (cactus_positions[0][0]-cactus_positions[1][0])/(cactus_positions[1][1]-cactus_positions[0][1])
 #                jump_distance = 270+((speed-900)/3)
                 seconds_away = closest_cactus/speed
-                print(seconds_away, closest_cactus, speed)
 #                if 160 < closest_cactus < jump_distance and not jumping:
                 if seconds_away < .31 and not jumping:
                     print("PRESSING")
